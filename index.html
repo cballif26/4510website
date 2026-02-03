@@ -99,6 +99,34 @@
             margin-top: 20px;
         }
 
+        .campus-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+        }
+
+        .campus-card {
+            background: #fff;
+            border: 1px solid #e6e6e6;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+        }
+
+        .campus-card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .campus-card p {
+            margin: 0;
+            padding: 12px 14px;
+            font-size: 0.95rem;
+            color: var(--secondary);
+        }
+
         footer {
             text-align: center;
             padding: 40px 0;
@@ -124,6 +152,7 @@
         <a href="#about">About</a>
         <a href="#projects">Excel & Audit Projects</a>
         <a href="#resume">Resume</a>
+        <a href="#campus">UVU Campus</a>
         <a href="#contact">Contact</a>
     </div>
 </nav>
@@ -158,6 +187,25 @@
     <h2>Resume</h2>
     <p>My professional experience spans from corporate event management to advanced graduate-level accounting coursework.</p>
     <a href="folder/Caleb.Ballif.Resume%202025.pdf" class="btn">Download Resume (PDF)</a>
+</section>
+
+<section id="campus" class="container">
+    <h2>UVU Campus</h2>
+    <p>Photos that capture the energy and spaces where I study at Utah Valley University.</p>
+    <div class="campus-grid">
+        <div class="campus-card">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/2/22/Utah_Valley_University_Student_Center.jpg" alt="Utah Valley University Student Center exterior">
+            <p>Utah Valley University Student Center</p>
+        </div>
+        <div class="campus-card">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/7/73/Utah_Valley_University_Campus.jpg" alt="Utah Valley University campus view with mountains">
+            <p>Campus view with the Wasatch Mountains</p>
+        </div>
+        <div class="campus-card">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/4/4c/Utah_Valley_University_Library.jpg" alt="Utah Valley University Library building">
+            <p>UVU Library</p>
+        </div>
+    </div>
 </section>
 
 <section id="contact" class="container">
